@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import index from '@/page/index'
 import personalInfo from '@/page/personalInfo'
 import picture from '@/page/picture'
+import miscellaneousNotes from '@/page/miscellaneousNotes'
 
 Vue.use(Router)
 
@@ -23,6 +24,12 @@ export default new Router({
       path:'/picture',
       name:'picture',
       component:picture
+    }
+    ,
+    {
+      path:'/notes',
+      name:'miscellaneousNotes',
+      component:miscellaneousNotes
     }
   ]
 })

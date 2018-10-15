@@ -1,0 +1,46 @@
+.layout_f {
+  margin: 3rem;
+}
+
+.layout_f li {
+  line-height: 2rem;
+  margin: 1.5rem;
+  overflow: hidden;
+}
+
+.ys_a {
+  border-bottom: 1px solid #f1ecec;
+  padding: 0.5rem 0;
+  border-top: 1px solid #f1ecec;
+}
+
+.src_a {
+  text-align: left;
+
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.src_a p {
+  text-indent: 2px;
+}
+
+.layout_f img,
+.src_a {
+  display: inline;
+}
+
+.layout_f li img {
+  width: 8rem;
+  height: 10rem;
+}
+.zs_l
+{
+    text-align: right;
+}
+.cd_sy li
+{
+  line-height: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgb(202, 141, 141);  
+}

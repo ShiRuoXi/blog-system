@@ -8,7 +8,7 @@
       <div class="backgroundCode backgroundCode_b list_layout">
         <HomeArticle class=""></HomeArticle>
       </div>
-      <div class="backgroundCode backgroundCode_a list_layout ">
+      <div class="backgroundCode backgroundCode_a list_layout " style="height:100%;">
         <PictureAdaptation></PictureAdaptation>
       </div>
        <div class="backgroundCode backgroundCode_b list_layout">

@@ -10,15 +10,34 @@
       <div class="menu_a" v-html="name?'菜单':''" v-on:click="name=!name"></div>
       <div class="grid-content bg-purple-light menu_b">
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-          <el-menu-item index="1"><a href="/" target="_blank">首页</a></el-menu-item>
-          <el-menu-item index="2"><a href="/" target="_blank">随笔</a></el-menu-item>
-          <el-menu-item index="3">读书杂记</el-menu-item>
-          <el-menu-item index="4">
-            <router-link to="/info">
-              <a class="btn btn-default" target="_blank">个人</a>
+          <el-menu-item index="1">
+            <router-link to="/">
+              首页
             </router-link>
           </el-menu-item>
-          <el-menu-item index="5"><a href="./index" target="_blank">美食</a></el-menu-item>
+          <el-menu-item index="2">
+            <a href="/" target="_blank">随笔</a>
+          </el-menu-item>
+          <el-menu-item index="3">
+            <router-link to="/notes">
+              杂记
+            </router-link>
+          </el-menu-item>
+          <el-menu-item index="4">
+            <router-link to="/info">
+              个人
+            </router-link>
+          </el-menu-item>
+          <el-menu-item index="5">
+            <router-link to="/info">
+              照片
+            </router-link>
+          </el-menu-item>
+          <el-menu-item index="6">
+            <router-link to="/info">
+              特效
+            </router-link>
+          </el-menu-item>
         </el-menu>
       </div>
     </el-col>
@@ -35,14 +54,14 @@
         </ul>
       </div>
     </div>
-    <el-col :span="4" :lg="4" :xs="24">
+    <!-- <el-col :span="4" :lg="4" :xs="24">
       <div class="grid-content bg-purple">
         <div style="height:3.5rem;" class="menu_b">
           <i class="el-icon-search"></i>
           <input class="input_search">
         </div>
       </div>
-    </el-col>
+    </el-col> -->
   </el-row>
 </template>
 
@@ -52,8 +71,8 @@
     data() {
       return {
         name: true,
-        activeIndex: '1',
-        activeIndex2: '1'
+        activeIndex: "1",
+        activeIndex2: "1"
       };
     },
     methods: {
@@ -61,7 +80,7 @@
         console.log(key, keyPath);
       }
     }
-  }
+  };
 </script>
 
 <style scoped>
@@ -96,8 +115,8 @@
     display: none;
   }
   .menu_c {
-    background-color: #b5acacf0;
-    -webkit-tap-highlight-color: #b5acacf0;
+    background-color: #000;
+    opacity: 0.5;
   }
   .menu_c li {
     list-style: none;

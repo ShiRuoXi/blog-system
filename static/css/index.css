@@ -1,0 +1,35 @@
+.el-main {
+  padding: 0;
+}
+
+
+
+.backgroundCode {
+
+  height: 90vh;
+}
+
+.backgroundCode_a {
+  background-color: #f5f5f5;
+  display:i nline-block;
+}
+
+.backgroundCode_b {
+  background-color: #fff;
+}
+
+.list_layout {
+  text-align: left;
+  padding: 4rem;
+  /* padding-top: 4rem; */
+
+}
+
+
+@media (max-width: 500px) {
+  .slideshow {
+    height: 13vh;
+  }
+  .backgroundCode{height: 100%;}
+ 
+}

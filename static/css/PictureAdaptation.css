@@ -1,0 +1,125 @@
+.message_board {
+  margin-left: 5rem;
+  width: 75%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  height: 30rem;
+  padding: 5rem;
+  color: #2b292a;
+}
+
+.best_layout {
+  box-shadow: 0 2px 12px 0 rgba(143, 140, 140, 0.1);
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 2px;
+  /* height: 45rem; */
+}
+
+.bestPictures {
+  padding: 3rem;
+  display: block;
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.best_layout:hover {
+  background-color: #fff;
+  /* border: 1px solid #ccc;  */
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.best_texe {
+  padding-left: 3rem;
+  width: 79%;
+  overflow: hidden;
+  height: 4.5rem;
+  height: 4.5rem;
+}
+
+.like {
+  padding-right: 3rem;
+  text-align: right;
+  padding-bottom: 1rem;
+}
+
+.like img {
+  width: 1.5rem;
+}
+
+.like span {
+  vertical-align: top;
+  padding-left: 0.5rem;
+}
+
+.showImg {
+  position: absolute;
+  z-index: 777;
+  background-color: #eeeced;
+  box-shadow: 0 2px 12px 0 rgba(181, 178, 178, 0.57);
+  width: 95%;
+}
+
+.showImg img {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.comment {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 5rem;
+}
+
+.comment .best_texe {
+  font: 16px/2 Tahoma, Verdana, "Microsoft Yahei";
+  letter-spacing: 0.5px;
+  height: 10rem;
+}
+
+.showImg .like {
+  text-align: right;
+  width: 4rem;
+  margin-left: 15rem;
+
+}
+
+.sty_con {
+  max-height: 8rem;
+   margin-top: 1rem;
+   margin-left: 2rem;
+}
+
+.sty_con_p {
+  text-align: left;
+  text-indent: 2em;
+  /* font-size: 13px; */
+  line-height: 1.9;
+  overflow: hidden;
+  color: #585858;
+  
+}
+
+
+@media (max-width: 500px) {
+  .sty_con{margin-left: 0rem; max-height: 8.5rem;
+    margin-top: 1rem!important;
+  }
+  .showImg {
+    width: 100%;
+
+   
+  }
+
+  .bestPictures {
+    padding: 1rem;
+   
+    
+  }
+
+  .bestPictures {
+    width: 91%;
+  }
+}

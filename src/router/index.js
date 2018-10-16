@@ -5,11 +5,13 @@ import index from '@/page/index'
 import personalInfo from '@/page/personalInfo'
 import picture from '@/page/picture'
 import miscellaneousNotes from '@/page/miscellaneousNotes'
+import explainList from '@/page/explainList'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
       path: '/',
       name: 'index',
@@ -30,6 +32,12 @@ export default new Router({
       path:'/notes',
       name:'miscellaneousNotes',
       component:miscellaneousNotes
+    }
+    ,
+    {
+      path:'/list',
+      name:'explainList',
+      component:explainList
     }
   ]
 })

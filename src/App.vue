@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  import mymenu from "../src/components/mymenu"
+  import mymenu from "../src/components/mymenu";
   export default {
     name: 'App',
     components: {

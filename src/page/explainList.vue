@@ -1,9 +1,9 @@
 <template>
   <div class="layout_f">
-    <el-row style="margin:5rem 5rem 0rem 5rem;">
-      <el-col :span="6" :xs="24"> <img class="_img" src="../assets/w.jpg">
+    <el-row class="_padding">
+      <el-col :span="6" :xs="10"> <img class="_img" src="../assets/w.jpg">
       </el-col>
-      <el-col :span="16" :xs="24" style="text-align:left;">
+      <el-col :span="16" :xs="14" style="text-align:left;">
         <h1 style="padding-left:1rem;font-size:1rem;">万水千山总是情</h1>
         <div class="exhibition">
           <p>梦想，可以天花乱坠，理想，是我们一步一个脚印踩出来的坎坷道路</p>

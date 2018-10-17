@@ -53,9 +53,13 @@
 
 }
 
+._padding {
+  margin: 5rem 5rem 0rem 5rem;
+}
+
 .exhibition {
   height: 7rem;
-  overflow:hidden;
+  overflow: hidden;
   padding: 1rem;
   /* border-bottom: 1px solid rgb(230, 228, 228); */
 }
@@ -80,7 +84,8 @@
   bottom: 0rem;
 
 }
-.haun:hover{
+
+.haun:hover {
   background-color: #969696;
   color: #fff;
   border-radius: 1rem;
@@ -88,7 +93,8 @@
 
 .intro {
   margin: 4rem 10rem;
-  text-align: left;}
+  text-align: left;
+}
 
 .intro h3 {
   margin-bottom: 1rem;
@@ -102,7 +108,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7
-  
 }
 
 @media (max-width: 500px) {
@@ -131,5 +136,17 @@
 
   .zs_l {
     margin-bottom: 1rem;
+  }
+
+  ._padding {
+    margin: 3rem 0rem;
+  }
+
+  .haun {
+    right: 0;
+  }
+
+  .intro {
+    margin: 3rem 0rem;
   }
 }

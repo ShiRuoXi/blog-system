@@ -16,7 +16,9 @@
             </router-link>
           </el-menu-item>
           <el-menu-item index="2">
-            <a href="/" target="_blank">随笔</a>
+            <router-link to="/desultory">
+              随笔
+            </router-link>
           </el-menu-item>
           <el-menu-item index="3">
             <router-link to="/notes">
@@ -34,7 +36,7 @@
             </router-link>
           </el-menu-item>
           <el-menu-item index="6">
-            <router-link to="/info">
+            <router-link to="/special">
               特效
             </router-link>
           </el-menu-item>
@@ -47,21 +49,47 @@
       </div>
       <div>
         <ul style="padding-top:2rem;">
-          <li>首页</li>
-          <li>随笔</li>
-          <li>留言</li>
-          <li>心情</li>
+          <li>
+            <router-link to="/">
+              首页
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/desultory">
+              随笔
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/notes">
+              杂记
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/picture">
+              照片
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/special">
+              特效
+            </router-link>
+          </li>
+           <li>
+            <router-link to="/info">
+              个人
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>
     <!-- <el-col :span="4" :lg="4" :xs="24">
-      <div class="grid-content bg-purple">
-        <div style="height:3.5rem;" class="menu_b">
-          <i class="el-icon-search"></i>
-          <input class="input_search">
-        </div>
-      </div>
-    </el-col> -->
+          <div class="grid-content bg-purple">
+            <div style="height:3.5rem;" class="menu_b">
+              <i class="el-icon-search"></i>
+              <input class="input_search">
+            </div>
+          </div>
+        </el-col> -->
   </el-row>
 </template>
 

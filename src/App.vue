@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <el-header class="menu_home">
+    <el-header class="menu_home">
       <mymenu></mymenu>
     </el-header>
     <router-view/>
@@ -27,7 +27,6 @@
         <!-- <p>子欲养而亲不待.有空多回家看看。</p> -->
       </div>
     </div>
-   
   </div>
 </template>
 
@@ -61,12 +60,12 @@
 
 <style>
   @import '../static/css/empty.css';
-   .menu_home {
+  .menu_home {
     height: 5rem !important;
     /* line-height: 6rem; */
     padding: 0px !important;
-   border-bottom: 1px solid rgb(238, 235, 235); 
- }   
+    border-bottom: 1px solid rgb(238, 235, 235);
+  }
   .active {
     top: -270px !important;
   }

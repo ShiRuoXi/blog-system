@@ -6,6 +6,8 @@ import personalInfo from '@/page/personalInfo'
 import picture from '@/page/picture'
 import miscellaneousNotes from '@/page/miscellaneousNotes'
 import explainList from '@/page/explainList'
+import desultory from '@/page/desultory'
+import special from '@/page/special'
 
 Vue.use(Router)
 
@@ -38,6 +40,18 @@ export default new Router({
       path:'/list',
       name:'explainList',
       component:explainList
+    }
+    ,
+    {
+      path:'/desultory',
+      name:'desultory',
+      component:desultory
+    }
+    ,
+    {
+      path:'/special',
+      name:'special',
+      component:special
     }
   ]
 })

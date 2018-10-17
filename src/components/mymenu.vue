@@ -29,7 +29,7 @@
             </router-link>
           </el-menu-item>
           <el-menu-item index="5">
-            <router-link to="/info">
+            <router-link to="/picture">
               照片
             </router-link>
           </el-menu-item>

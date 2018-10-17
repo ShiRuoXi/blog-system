@@ -1,11 +1,5 @@
 <template>
   <el-row :gutter="15" id="shouji">
-    <!-- <el-col :span="8" :xs="0">
-      <div class="grid-content bg-purple best_layout " id="showImg">
-        我们是时候聊聊了...
-        <div>{{stateTrigger}}</div> 
-      </div>
-    </el-col> -->
     <el-col :span="24" :xs="24">
       <div class="grid-content bg-purple-light">
         <div>

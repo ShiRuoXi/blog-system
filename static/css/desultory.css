@@ -62,7 +62,7 @@
   /* border: 1px solid #ffecec; */
 	border-radius: 4px;
   border-left: 5px solid #d11010;
-  border-right: 5px solid #d11010;
+  /* border-right: 5px solid #d11010; */
 	margin: 20px 0;
 	font-size: 14px;
 	color: #5e6d82;
@@ -71,6 +71,19 @@
 .liuyanban_a
 {
   text-align: left;
+}
+.libyan_title
+{
+  color: #222;
+  font-size: 14px;
+  border-left: 5px solid #0e0d0d;
+  margin: 5rem 0 2rem 0;
+  padding-left: 2rem;
+}
+.liuyan_content ul li 
+{
+  border: 1px solid #ccc;
+  padding: 1rem;
 }
 @media (max-width: 500px) 
 {

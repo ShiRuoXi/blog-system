@@ -6,8 +6,8 @@
           <button @click="isCollapse=!isCollapse" class="but_isCollapse">菜单</button>
           <el-submenu index="1">
             <template slot="title">
-                 <i class="el-icon-location"></i>
-                 <span slot="title">导航一</span>
+                             <i class="el-icon-location"></i>
+                             <span slot="title">导航一</span>
 </template>
     <el-menu-item-group class="side">
      <el-menu-item index="1-1">JavaScript指南</el-menu-item>
@@ -63,7 +63,27 @@
         </div>
 
 <div class="liuyanban_a">
-   <!-- <div><img src="../assets/img/heimao.gif">活捉4条留言</div>   -->
+    <!-- <div class="libyan_title">活捉4条留言</div> -->
+    <!-- <div class="liuyan_content">
+      <ul>
+        <li>
+           <span>张小王</span>
+          <span>2018/10/18</span>
+           <p>额,(⊙﹏⊙)   怎么感觉页面都是静态的。</p>
+        </li>
+        <li>
+            <span>风中摇曳的水仙花</span>
+          <span>2018/9/24</span>
+           <p>过来看一眼,加油。</p>
+        </li>
+      </ul>
+      <div class="block">
+  <el-pagination
+    layout="prev, pager, next"
+    :total="50">
+  </el-pagination>
+</div>
+    </div> -->
   </div>
 
         </div>

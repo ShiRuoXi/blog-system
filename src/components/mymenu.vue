@@ -25,21 +25,21 @@
               杂记
             </router-link>
           </el-menu-item>
-          <el-menu-item index="4">
+          <!-- <el-menu-item index="4">
             <router-link to="/info">
               个人
             </router-link>
-          </el-menu-item>
+          </el-menu-item> -->
           <el-menu-item index="5">
             <router-link to="/picture">
               照片
             </router-link>
           </el-menu-item>
-          <el-menu-item index="6">
+          <!-- <el-menu-item index="6">
             <router-link to="/special">
               特效
             </router-link>
-          </el-menu-item>
+          </el-menu-item> -->
         </el-menu>
       </div>
     </el-col>
@@ -69,16 +69,16 @@
               照片
             </router-link>
           </li>
-          <li>
+          <!-- <li>
             <router-link to="/special">
               特效
             </router-link>
-          </li>
-           <li>
+          </li> -->
+           <!-- <li>
             <router-link to="/info">
               个人
             </router-link>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

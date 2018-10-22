@@ -1,0 +1,135 @@
+.player_info {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem;
+  color: #9E7E6B;
+}
+
+.player_info:hover,
+.player_info:link {
+  text-decoration: none !important;
+}
+
+.watergall {
+  width: 100%;
+  padding: 1rem;
+}
+
+.pin_view_layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background: rgba(229, 229, 229, .95); */
+  background: #f5f5f5;
+  z-index: 99994;
+  overflow: auto;
+  padding-top: 40px;
+}
+
+.close-layer {
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  right: .875rem;
+  top: 0;
+  cursor: pointer;
+  z-index: 99995;
+}
+
+.close-layer i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -18px 0 0 -18px;
+  font-size: 3rem;
+}
+
+.image_title {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+}
+
+.main-part {
+  width: 1014px;
+  margin: 0 auto;
+
+
+}
+
+.image-piece {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 698px;
+  margin-top: 16px;
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .02), 0 4px 8px 0 rgba(0, 0, 0, .02);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .02), 0 4px 8px 0 rgba(0, 0, 0, .02);
+
+}
+
+.main-part img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pin-view {
+  position: absolute;
+  top: 17px;
+  right: 82px;
+  width: 300px;
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .02), 0 4px 8px 0 rgba(0, 0, 0, .02);
+}
+
+.image_navigation {
+  width: 698px;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+
+}
+
+.image_navigation i {
+  font-size: 4rem;
+  color: #fff;
+}
+.let
+{
+  margin-left: 70%;
+}
+
+.image_navigation i:hover {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+
+  .main-part {
+    width: 100%;
+  }
+
+  .image-piece {
+    width: 89%;
+  }
+  .image_navigation
+  {
+    width: 90%;
+  }
+  .let{margin-left: 60%;}
+  .pin-view
+  {
+    position: static;
+    width: 100%;
+  }
+}

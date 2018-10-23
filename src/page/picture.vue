@@ -1,5 +1,3 @@
-
-           
 <template>
   <div id="all_user" style="height: 42rem;">
     <el-row>

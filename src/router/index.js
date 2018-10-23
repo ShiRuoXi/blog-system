@@ -9,6 +9,8 @@ import explainList from '@/page/explainList'
 import desultory from '@/page/desultory'
 import special from '@/page/special'
 
+import vueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(vueAwesomeSwiper);
 Vue.use(Router)
 
 export default new Router({

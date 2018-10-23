@@ -16,7 +16,7 @@
 }
 
 .bestPictures {
-  padding: 3rem;
+  padding: 2rem;
   display: block;
   width: 80%;
   height: auto;
@@ -52,13 +52,6 @@
   padding-left: 0.5rem;
 }
 
-.showImg {
-  position: absolute;
-  z-index: 777;
-  background-color: #eeeced;
-  box-shadow: 0 2px 12px 0 rgba(181, 178, 178, 0.57);
-  width: 95%;
-}
 
 .showImg img {
   display: inline-block;
@@ -88,7 +81,7 @@
 
 .sty_con {
   max-height: 8rem;
-   margin-top: 1rem;
+   margin-top: 3rem;
    margin-left: 2rem;
 }
 

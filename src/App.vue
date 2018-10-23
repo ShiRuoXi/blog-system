@@ -32,6 +32,7 @@
 
 <script>
   import mymenu from "../src/components/mymenu";
+  import $ from 'jquery'
   export default {
     name: 'App',
     components: {
@@ -41,18 +42,18 @@
       window.addEventListener('scroll', function() {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
         if (scrollTop > 0) {
-          document.getElementById("backtop").style.top = "-270px";
+          document.getElementById("backtop").style.top = "-270px"; //下垂的高度
         } else {
-          document.getElementById("backtop").style.top = "-900px";
+          document.getElementById("backtop").style.top = "-900px"; //上拉的高度
         }
       })
     },
     methods: {
       backHead: function() {
-        document.getElementById("backtop").style.top = "-900px";
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-        window.pageYOffset = 0;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        $('html,body').animate({
+          scrollTop: 0
+        }, 300)
       }
     }
   }
@@ -65,6 +66,7 @@
     /* line-height: 6rem; */
     padding: 0px !important;
     border-bottom: 1px solid rgb(238, 235, 235);
+    background-color: transparent;
   }
   .active {
     top: -270px !important;
@@ -143,7 +145,7 @@
     position: absolute;
     z-index: 999;
     top: 27rem;
-    right: 0;
+    right: 1rem;
   }
   .calendar {
     width: 1rem;

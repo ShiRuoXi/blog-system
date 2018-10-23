@@ -107,14 +107,14 @@
     text-align: left;
     margin-left: 4rem;
     margin-right: 1rem;
-    padding-top: 4rem;
+    padding-top: 0rem;
   }
   .dt_text {
     padding-left: 1rem;
     color: #888;
   }
   .article {
-    margin: 2rem 0rem;
+    margin: 1.5rem 0rem;
   }
   .article dt {
     text-decoration: none;
@@ -122,7 +122,7 @@
     position: relative;
     color: #34495e;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .article dd {
     text-decoration: none;

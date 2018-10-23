@@ -30,10 +30,8 @@
                     <a>学习</a>
                     <a>恋爱</a>
                     <a>规划</a>
-                    <a>灵感</a>
                   </div>
                   <div>
-                    <a>学习</a>
                     <a>恋爱</a>
                     <a>规划</a>
                     <a>灵感</a>
@@ -49,12 +47,14 @@
 </template>
 
 <script>
+  import $ from 'jquery'
   export default {
     name: 'TrillianAstra',
     data: function() {
       return {
         chatSwitch: false,
         menuSwitch: false,
+        msgfromfa:['msgfromfa'],
         items: [{
           message: '你好',
           class: 'me'
@@ -78,19 +78,20 @@
       showInfo: function() {
         let state = true;
         var list = this.items;
-        window.addEventListener('scroll', function() {
-          var distance = document.getElementById("shouji").offsetTop || document.getElementById("shouji").body.offsetTop;
-          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-          if (scrollTop> (distance-150) && state) {
-            list.push({
-              message: '很高兴认识你!',
-              class: 'me'
-            });
-            state = false;
-            window.removeEventListener;
-          }
-        })
-        this.items = list;
+        // window.addEventListener('scroll', function() {
+         
+        //   var distance = document.getElementById("shouji").offsetTop || document.getElementById("shouji").body.offsetTop;
+        //   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        //   if (scrollTop > (distance - 150) && state) {
+        //     list.push({
+        //       message: '很高兴认识你!',
+        //       class: 'me'
+        //     });
+        //     state = false;
+        //     window.removeEventListener;
+        //   }
+        // })
+        // this.items = list;
       }
     }
   }
@@ -104,7 +105,7 @@
     width: 3rem;
     height: 2rem;
     display: inline-block;
-    padding: 1rem 0.685rem;
+    padding: 0.685rem;
     /* border: 1px solid #ccc; */
     text-align: center;
     cursor: pointer;
@@ -116,16 +117,16 @@
   .msg_end {
     border-left: 1px solid #dacbb9;
     position: relative;
-    top: -33.05rem;
-    width: 93.1%;
+    top: -29.05rem;
+    width: 92.2%;
     margin-left: 10px;
-    height: 31rem;
+    height: 26rem;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .convo {
     margin: auto;
-    height: 37rem;
-    width: 20rem;
+    height: 33rem;
+    width: 18rem;
     border: 1px solid #dacbb9;
     box-shadow: 0px 1px 12px 3px rgb(255, 251, 251);
     border-radius: 2rem;
@@ -142,13 +143,14 @@
   .property_page {
     background-color: #fff;
     border-radius: 3px;
-    height: 33rem;
+    height: 29rem;
     border: 1px solid #dacbb9;
     margin: 2rem .625rem;
     /* box-shadow: inset 0px -1px 30px #99dad794; */
   }
   ul.chat-thread {
-    height: 24.5rem;
+    text-align: left;
+    height: 21rem;
     overflow: auto;
     padding: 2rem 0.5rem;
     background-color: rgba(211, 235, 235, 0.56);
@@ -166,12 +168,13 @@
     height: 4px;
   }
   .sent_div {
+    text-align: left;
     color: #ccc;
     padding-left: 1rem;
     padding-top: 0.2rem;
     border-top: 1px solid rgb(236, 234, 234);
     font-size: 0.8rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
   .chat-thread li div {
     color: #666;

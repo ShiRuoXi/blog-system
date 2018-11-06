@@ -6,7 +6,7 @@
       <el-col :span="16" :xs="14" style="text-align:left;">
         <h1 style="padding-left:1rem;font-size:1rem;">万水千山总是情</h1>
         <div class="exhibition">
-          <p>遇见你之前 我没想过结婚 想结婚后 我没想过别人 时间会告诉我答案 多年后 那个人 到底是不是你 </p>
+          <p>遇见你之前 我没想过结婚 想结婚后 我没想过别人 时间会告诉我答案 多年后 那个人 到底是不是你123456 </p>
           <div class="haun">换</div>
         </div>
       </el-col>

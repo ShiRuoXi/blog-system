@@ -6,7 +6,10 @@
       <el-col :span="16" :xs="14" style="text-align:left;">
         <h1 style="padding-left:1rem;font-size:1rem;">{{articleDetail.articleTitle}}</h1>
         <div class="exhibition">
+<<<<<<< HEAD
            <span v-html="articleDetail.articleContent"></span>
+=======
+>>>>>>> 3789187bac9c07e31d37220cf580402bc0261a39
           <div class="haun">换</div>
         </div>
       </el-col>

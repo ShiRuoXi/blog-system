@@ -5,7 +5,7 @@
         <div class="grid-content bg-purple">
           <ul>
             <li>
-              <el-row>
+              <el-row v-for="article in article_list">
                 <el-col :span="10" :xs="24">
                   <router-link to="/list">
                     <img class="_img" src="../assets/2.jpg">
@@ -13,32 +13,12 @@
                 </el-col>
                 <el-col :span="14" :xs="24" class="ys_a">
                   <div class="src_a">
-                    <router-link to="/list">
-                      <h3>万水千山总是情 <span>三毛</span></h3>
+                    <router-link :to="{path:'/list',query:{id:article.id}}">
+                      <h3>{{article.articleTitle}} <span>{{article.author}}</span></h3>
                     </router-link>
-                    <p>有时候，我多么希望能有一双睿智的眼睛能够看穿我，能够明白了解我的一切，包括所有的斑斓和荒芜。那双眼眸能够穿透我的最为本质的灵魂，直抵我心灵深处那个真实的自己，她的话语能解决我所有的迷惑，或是对我的所作所为能有一针见血的评价。</p>
+                    <p>{{article.articleContentShort}}</p>
                     <div class="zs_l">
-                      2018-18-08
-                    </div>
-                  </div>
-                </el-col>
-              </el-row>
-            </li>
-            <li>
-              <el-row>
-                <el-col :span="10" :xs="24">
-                  <router-link to="/list">
-                    <img class="_img" src="../assets/2.jpg">
-                  </router-link>
-                </el-col>
-                <el-col :span="14" :xs="24" class="ys_a">
-                  <div class="src_a">
-                    <router-link to="/list">
-                      <h3>万水千山总是情 <span>三毛</span></h3>
-                    </router-link>
-                    <p>有时候，我多么希望能有一双睿智的眼睛能够看穿我，能够明白了解我的一切，包括所有的斑斓和荒芜。那双眼眸能够穿透我的最为本质的灵魂，直抵我心灵深处那个真实的自己，她的话语能解决我所有的迷惑，或是对我的所作所为能有一针见血的评价。</p>
-                    <div class="zs_l">
-                      2018-18-08
+                      {{article.createDate}}
                     </div>
                   </div>
                 </el-col>
@@ -60,7 +40,27 @@
 </template>
 <script>
   export default {
-    name: "notes"
+    name: "notes",
+    data(){
+      return{
+        article_list:null
+      }
+    },
+    mounted:function(){
+      this.getList();
+    },
+    methods: {
+      getList(){
+        this.$axios.post('/SRXBlogService/ArticleController/getArticlePages',this.$qs.stringify({pageNum:1,pageSize:10}))
+        .then(res =>{
+          this.article_list = res.data
+          console.log(this.article_list)
+        })
+        .catch(function(res){
+          console.log(res.data)
+        })
+      }
+    }
   };
 </script>
 <style scoped>

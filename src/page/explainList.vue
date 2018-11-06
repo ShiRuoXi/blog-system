@@ -1,12 +1,12 @@
 <template>
   <div class="layout_f">
-    <el-row class="_padding">
+    <el-row class="_padding" >
       <el-col :span="6" :xs="10"> <img class="_img" src="../assets/w.jpg">
       </el-col>
       <el-col :span="16" :xs="14" style="text-align:left;">
-        <h1 style="padding-left:1rem;font-size:1rem;">万水千山总是情</h1>
+        <h1 style="padding-left:1rem;font-size:1rem;">{{articleDetail.articleTitle}}</h1>
         <div class="exhibition">
-          
+           <span v-html="articleDetail.articleContent"></span>
           <div class="haun">换</div>
         </div>
       </el-col>
@@ -30,7 +30,7 @@
         .then(res =>{
           debugger
           this.articleDetail = res.data
-          console.log(this.article_list)
+          console.log(this.articleDetail)
         })
         .catch(function(res){
           console.log(res.data)

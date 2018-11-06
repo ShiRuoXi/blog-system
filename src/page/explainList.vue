@@ -6,7 +6,6 @@
       <el-col :span="16" :xs="14" style="text-align:left;">
         <h1 style="padding-left:1rem;font-size:1rem;">万水千山总是情</h1>
         <div class="exhibition">
-          
           <div class="haun">换</div>
         </div>
       </el-col>

@@ -53,6 +53,7 @@
       getList(){
         this.$axios.post('/SRXBlogService/ArticleController/getArticlePages',this.$qs.stringify({pageNum:1,pageSize:10}))
         .then(res =>{
+          debugger
           this.article_list = res.data
           console.log(this.article_list)
         })

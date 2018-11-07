@@ -1,5 +1,5 @@
 <template>
-  <div class="layout_f">
+  <div class="layout_f top_layout">
     <el-row class="_padding" >
       <el-col :span="6" :xs="10"> <img class="_img" src="../assets/w.jpg">
       </el-col>

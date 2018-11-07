@@ -1,5 +1,25 @@
 <template>
   <el-container>
+     <div class="calendar_lon">
+      <div class="calendar">福袋</div>
+      <div class="count_down">
+        <div class="Holiday_tips Holiday_style">
+          2018年09月24
+          <br> 八月十五
+          <br> 中秋节
+        </div>
+        <div class="Holiday_tips Holiday_info">距离中秋回家还有<span style="color:#d24343;font-size: 1rem;padding:4px;">55</span>天.
+        </div>
+        <div class="Holiday_tips">
+          <ul>
+            <li><a>火车票入口</a></li>
+            <li><a>汽车票入口</a></li>
+            <li><a>飞机票入口</a></li>
+          </ul>
+        </div>
+        <!-- <p>子欲养而亲不待.有空多回家看看。</p> -->
+      </div>
+    </div>
     <el-main class="el-main">
       <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
         <swiper-slide class="swiper-slide" v-for="(item, index) in list" :key="index">
@@ -13,9 +33,7 @@
       </swiper>
     </el-main>
   </el-container>
-</template>
- 
-           
+</template>     
 <script>
   import {
     swiper,

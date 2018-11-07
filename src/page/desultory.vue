@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="top_layout">
     <el-row>
       <el-col :span="6">
-        <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+        <el-menu default-active="1-4-1" style="position: fixed;" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
           <button @click="isCollapse=!isCollapse" class="but_isCollapse">菜单</button>
           <el-submenu index="1">
             <template slot="title">
@@ -42,7 +42,7 @@
   
 </el-menu>
       </el-col>
-      <el-col :span="12" :xs="18" class="buju_e">
+      <el-col :span="19" :xs="18" class="buju_e">
         <div class="grid-content bg-purple-light">
         <h3 class="biaoti">npm 安装</h3>  
         <div class="wenzhang">

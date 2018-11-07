@@ -1,5 +1,5 @@
 <template>
-  <div id="all_user" style="height: 42rem;">
+  <div id="all_user " class="top_layout" style="height: 42rem;" >
     <el-row>
       <el-col :span="24" :xs="24">
         <div class="grid-content bg-purple-dark pin_view_layer" v-show="showstate">

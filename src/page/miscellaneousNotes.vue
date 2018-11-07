@@ -1,5 +1,5 @@
 <template>
-  <div class="layout_f">
+  <div class="layout_f top_layout">
     <el-row >
       <el-col :span="16" :xs="24">
         <div class="grid-content bg-purple">

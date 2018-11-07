@@ -1,32 +1,13 @@
 <template>
   <div id="app">
     <el-header class="menu_home">
-      <mymenu></mymenu>
+      <mymenu id="menu_layout"></mymenu>
     </el-header>
     <router-view/>
     <div class="backtop" id="backtop" v-on:click="backHead()">
       <i class="fa"></i>
     </div>
-    <div class="calendar_lon">
-      <div class="calendar">福袋</div>
-      <div class="count_down">
-        <div class="Holiday_tips Holiday_style">
-          2018年09月24
-          <br> 八月十五
-          <br> 中秋节
-        </div>
-        <div class="Holiday_tips Holiday_info">距离中秋回家还有<span style="color:#d24343;font-size: 1rem;padding:4px;">55</span>天.
-        </div>
-        <div class="Holiday_tips">
-          <ul>
-            <li><a>火车票入口</a></li>
-            <li><a>汽车票入口</a></li>
-            <li><a>飞机票入口</a></li>
-          </ul>
-        </div>
-        <!-- <p>子欲养而亲不待.有空多回家看看。</p> -->
-      </div>
-    </div>
+   
   </div>
 </template>
 
@@ -40,11 +21,13 @@
     },
     mounted() {
       window.addEventListener('scroll', function() {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;  
         if (scrollTop > 0) {
-          document.getElementById("backtop").style.top = "-270px"; //下垂的高度
+          document.getElementById("backtop").style.top = "-270px"; //下垂的高度   
+           $('.menu_home').hide();
         } else {
           document.getElementById("backtop").style.top = "-900px"; //上拉的高度
+            $('.menu_home').show();         
         }
       })
     },
@@ -66,7 +49,11 @@
     /* line-height: 6rem; */
     padding: 0px !important;
     border-bottom: 1px solid rgb(238, 235, 235);
-    background-color: transparent;
+    background-color: #fff;
+    /* position:fixed;width: 100%; */
+    position:fixed;
+    width: 100%;
+    z-index: 999;
   }
   .active {
     top: -270px !important;
@@ -145,7 +132,7 @@
     position: absolute;
     z-index: 999;
     top: 27rem;
-    right: 1rem;
+    right: 0rem;
   }
   .calendar {
     width: 1rem;
@@ -160,6 +147,7 @@
   .calendar_lon:hover .count_down {
     display: block;
   }
+  .top_layout{padding-top: 5rem;}
   @media (max-width: 500px) {
     /* .menu_home{position:fixed;} */
     .backtop {

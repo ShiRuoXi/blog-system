@@ -3,7 +3,7 @@
   <el-row style="height:6rem;">
     <el-col :span="8" :lg="8" :xs="12">
       <div class="grid-content bg-purple">
-        <img src="../../src/assets/logo.png">
+        <img class="icon" src="../../src/assets/logo.png">
       </div>
     </el-col>
     <el-col :span="10" :lg="10" :xs="12">
@@ -35,11 +35,11 @@
               照片
             </router-link>
           </el-menu-item>
-          <!-- <el-menu-item index="6">
+           <el-menu-item index="6">
             <router-link to="/special">
-              特效
+              特效{{height}}
             </router-link>
-          </el-menu-item> -->
+          </el-menu-item> 
         </el-menu>
       </div>
     </el-col>
@@ -100,14 +100,16 @@
       return {
         name: true,
         activeIndex: "1",
-        activeIndex2: "1"
+        activeIndex2: "1",
+        height:''
       };
     },
     methods: {
-      handleSelect(key, keyPath) {
+       handleSelect(key, keyPath) {
         console.log(key, keyPath);
       }
     }
+
   };
 </script>
 

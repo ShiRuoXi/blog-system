@@ -1,7 +1,8 @@
 <template>
+<div>
   <div class="top_layout special">
     <el-row>
-      <el-row style="padding-top:2rem;">
+      <el-row style="padding-top:2rem;margin-right:14rem;">
         <el-col :span="8">
           <div class="grid-content bg-purple">
             <div class=" headline_content_a">
@@ -134,16 +135,16 @@
                   <span>2018.7.5 </span> <a href="">button 触发样式</a>
                 </li>
                 <li>
-                  <span>2018.7.5 </span> <a href="">button 触发样式</a>
+                  <span>2018.7.5 </span> <a href="">button 触发样式11111111</a>
                 </li>
                 <li>
-                  <span>2018.7.5 </span> <a href="">button 触发样式</a>
+                  <span>2018.7.5 </span> <a href="">button 触发样式4</a>
                 </li>
                 <li>
-                  <span>2018.7.5 </span> <a href="">button 触发样式</a>
+                  <span>2018.7.5 </span> <a href="">button 触发样式8888888888888888888888888</a>
                 </li>
                 <li>
-                  <span>2018.7.5 </span> <a href="">button 触发样式</a>
+                  <span>2018.7.5 </span> <a href="">button 触发样式777777788887777777777777777</a>
                 </li>
                 <li>
                   <span>2018.7.5 </span> <a href="">button 触发样式</a>
@@ -191,7 +192,12 @@
       </el-row>
     </el-row>
   </div>
-  </div>
+ <el-pagination
+    layout="prev, pager, next"
+    :total="50" style="margin-bottom:2rem;">
+  </el-pagination>
+</div>
+</div>
 </template>
 <script>
   export default {}
@@ -209,7 +215,7 @@
     float: left;
   } 
   .headline_content_a ul{    float: left;}
-  .headline_content_a li{   line-height: 2.5;}
+  .headline_content_a li{   line-height: 2.5;width: 100%;}
 
   .headline_content_a span {
     width: 100%;
@@ -233,5 +239,10 @@
     line-height: 1.5rem;
     height: 1.5rem;
     vertical-align:top;
+  }
+  .headline_content_a a:hover
+  {
+    background-color: black;
+    color: #fff;
   }
 </style>

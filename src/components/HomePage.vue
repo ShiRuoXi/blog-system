@@ -1,5 +1,5 @@
 <template>
-  <el-carousel indicator-position="outside" :height="imgHeight">
+  <el-carousel indicator-position="outside" :height="imgHeight"  style="padding-top:5rem;">
     <el-carousel-item v-for="item in items" :key="item" class="carousel">
       <img :src="item">
     </el-carousel-item>
@@ -33,11 +33,9 @@
     margin: 0;
   }
   .el-carousel__item:nth-child(2n) {
-    /* background-color: #99a9bf; */
     background-color: transparent;
   }
   .el-carousel__item:nth-child(2n+1) {
-    /* background-color: #d3dce6; */
     background-color: transparent;
   }
   @media (max-width: 500px) {

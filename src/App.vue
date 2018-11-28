@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <el-header class="menu_home">
+     <el-header class="menu_home">
       <mymenu id="menu_layout"></mymenu>
-    </el-header>
+    </el-header> 
     <router-view/>
-    <div class="backtop" id="backtop" v-on:click="backHead()">
+     <div class="backtop" id="backtop" v-on:click="backHead()">
       <i class="fa"></i>
     </div>
-   
+    
   </div>
 </template>
 

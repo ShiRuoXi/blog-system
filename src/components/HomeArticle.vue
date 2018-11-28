@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <el-col :span="13" :xs="24">
-      <div class="grid-content bg-purple-dark">
+      <div class="grid-content bg-purple-dark" >
         <div>
           <h4>最新文章列表</h4>
           <div class="article">
@@ -43,7 +43,7 @@
       </div>
     </el-col>
     <el-col :span="10" :xs="24">
-      <div class="grid-content bg-purple-dark layout_a">
+      <div class="grid-content bg-purple-dark layout_a" >
         <el-row>
           <el-col style="text-align: center;" :span="12" :xs="12">
             <ul class="category_listings">

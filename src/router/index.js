@@ -8,6 +8,7 @@ import miscellaneousNotes from '@/page/miscellaneousNotes'
 import explainList from '@/page/explainList'
 import desultory from '@/page/desultory'
 import special from '@/page/special'
+import test from '@/page/test'
 
 import vueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(vueAwesomeSwiper);
@@ -54,6 +55,12 @@ export default new Router({
       path:'/special',
       name:'special',
       component:special
+    }
+    ,
+    {
+      path:'/test',
+      name:'test',
+      component:test
     }
   ]
 })

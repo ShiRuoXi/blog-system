@@ -1,7 +1,8 @@
 <template>
   <el-row :gutter="15" id="shouji">
     <el-col :span="24" :xs="24">
-      <div class="grid-content bg-purple-light">
+      <!-- <div>{{msgfromfa}}</div> -->
+      <div class="grid-content bg-purple-light" >
         <div>
           <div id="convo" class="convo">
             <div class="property_page">
@@ -50,6 +51,7 @@
   import $ from 'jquery'
   export default {
     name: 'TrillianAstra',
+    props:["msgfromfa"],
     data: function() {
       return {
         chatSwitch: false,
@@ -76,8 +78,8 @@
         this.menuSwitch = true;
       },
       showInfo: function() {
-        let state = true;
-        var list = this.items;
+        console.log(this.msgfromfa);
+        // var list = this.items;
         // window.addEventListener('scroll', function() {
          
         //   var distance = document.getElementById("shouji").offsetTop || document.getElementById("shouji").body.offsetTop;

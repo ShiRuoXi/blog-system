@@ -1,6 +1,6 @@
 <template>
   <el-container>
-     <div class="calendar_lon">
+    <div class="calendar_lon">
       <div class="calendar">福袋</div>
       <div class="count_down">
         <div class="Holiday_tips Holiday_style">
@@ -17,7 +17,6 @@
             <li><a>飞机票入口</a></li>
           </ul>
         </div>
-        <!-- <p>子欲养而亲不待.有空多回家看看。</p> -->
       </div>
     </div>
     <el-main class="el-main">
@@ -27,13 +26,13 @@
             <HomePage v-show="item==0"></HomePage>
             <HomeArticle v-show="item==1" class="let_padding bott" style="text-align:left;"></HomeArticle>
             <PictureAdaptation v-show="item==2" class="let_padding"></PictureAdaptation>
-            <TrillianAstra v-show="item==3" :msgfromfa="item==3?true:false" style="padding:3rem;"></TrillianAstra>
+            <TrillianAstra v-show="item==3" :msgfromfa="msgfromfa" style="padding:3rem;"></TrillianAstra> 
           </div>
         </swiper-slide>
       </swiper>
     </el-main>
   </el-container>
-</template>     
+</template>
 <script>
   import {
     swiper,
@@ -54,6 +53,7 @@
     },
     data() {
       return {
+        msgfromfa: 0,//传值
         list: [], //轮换列表
         index: "",
         swiperOption: {
@@ -65,15 +65,21 @@
           slidesPerView: 1,
           mousewheel: true, //开启鼠标滚轮控制Swiper切换。可设置鼠标选项，默认值fals
           mousewheelControl: true, //同上
-          height: window.innerHeight, // 高度设置，占满设备高度
-          // preventClicksPropagation: false, //阻止click冒泡。拖动Swiper时阻止click事件。
-          // simulateTouch: false, //鼠标模拟手机触摸。默认为true，Swiper接受鼠标点击、拖动。
+          height: window.innerHeight, // 高度设置，占满设备高度     
           resistanceRatio: 0, //抵抗率。边缘抵抗力的大小比例。值越小抵抗越大越难将slide拖离边缘，0时完全无法拖离。本业务需要
           observeParents: true, //将observe应用于Swiper的父元素。当Swiper的父元素变化时，例如window.resize，Swiper更新
           on: {
             //监听滑动切换事件，返回swiper对象
             slideChange: () => {
-              let swiper = this.$refs.mySwiper.swiper;
+               let swiper = this.$refs.mySwiper.swiper;
+               this.msgfromfa=swiper.activeIndex;
+              // if (swiper.activeIndex == 3) {
+              //   //  this.items.push({
+              //   //  message: '你好',
+              //   //    class: 'you'
+              //   //  });
+              //   console.log(swiper.activeIndex);
+              // }
             }
             // ,
             // slideChangeTransitionEnd: function() {
@@ -95,11 +101,10 @@
   }
 </script>
 <style scoped>
- 
   @import url("../../static/css/index.css");
-  .el-main {
+  /* .el-main {
     overflow: hidden;
-  }
+  } */
   .swiper-slide:nth-child(2n) {
     background: #fff;
   }

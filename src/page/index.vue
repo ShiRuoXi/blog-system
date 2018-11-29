@@ -23,10 +23,14 @@
       <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
         <swiper-slide class="swiper-slide" v-for="(item, index) in list" :key="index">
           <div class="page">
-            <HomePage v-show="item==0"></HomePage>
-            <HomeArticle v-show="item==1" class="let_padding bott" style="text-align:left;"></HomeArticle>
-            <PictureAdaptation v-show="item==2" class="let_padding"></PictureAdaptation>
-            <TrillianAstra v-show="item==3" :msgfromfa="msgfromfa" style="padding:3rem;"></TrillianAstra> 
+            <HomePage v-show="item==0"> </HomePage>
+            <div v-show="item==1" class="height_a let_padding">
+              <p>页面维修中...</p>
+            </div>
+            <div v-show="item==2" class="height_a let_padding">
+              <p>页面维修中...</p>
+            </div>
+            <TrillianAstra v-show="item==3" class="height_a let_padding"></TrillianAstra>
           </div>
         </swiper-slide>
       </swiper>
@@ -38,14 +42,10 @@
     swiper,
     swiperSlide
   } from 'vue-awesome-swiper'
-  import HomeArticle from '../components/HomeArticle';
-  import PictureAdaptation from '../components/PictureAdaptation';
   import HomePage from '../components/HomePage';
   import TrillianAstra from '../components/TrillianAstra';
   export default {
     components: {
-      HomeArticle,
-      PictureAdaptation,
       HomePage,
       TrillianAstra,
       swiper,
@@ -53,7 +53,7 @@
     },
     data() {
       return {
-        msgfromfa: 0,//传值
+        // msgfromfa: 0,//传值
         list: [], //轮换列表
         index: "",
         swiperOption: {
@@ -71,8 +71,8 @@
           on: {
             //监听滑动切换事件，返回swiper对象
             slideChange: () => {
-               let swiper = this.$refs.mySwiper.swiper;
-               this.msgfromfa=swiper.activeIndex;
+              let swiper = this.$refs.mySwiper.swiper;
+              //  this.msgfromfa=swiper.activeIndex;
               // if (swiper.activeIndex == 3) {
               //   //  this.items.push({
               //   //  message: '你好',
@@ -102,9 +102,9 @@
 </script>
 <style scoped>
   @import url("../../static/css/index.css");
-  /* .el-main {
-    overflow: hidden;
-  } */
+  .height_a {
+    height: 50rem;
+  }
   .swiper-slide:nth-child(2n) {
     background: #fff;
   }
@@ -121,9 +121,6 @@
     .let_padding {
       padding: 1.5rem;
     }
-  }
-  body {
-    overflow: hidden;
   }
 </style>
 

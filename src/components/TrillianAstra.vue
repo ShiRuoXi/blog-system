@@ -1,9 +1,5 @@
 <template>
-  <el-row :gutter="15" id="shouji">
-    <el-col :span="24" :xs="24">
-      <!-- <div>{{msgfromfa}}</div> -->
-      <div class="grid-content bg-purple-light" >
-        <div>
+   <div>
           <div id="convo" class="convo">
             <div class="property_page">
               <div class="Chat_title">与小白聊天中...</div>
@@ -42,21 +38,18 @@
             </div>
           </div>
         </div>
-      </div>
-    </el-col>
-  </el-row>
 </template>
 
 <script>
   import $ from 'jquery'
   export default {
     name: 'TrillianAstra',
-    props:["msgfromfa"],
+    // props:["msgfromfa"],
     data: function() {
       return {
         chatSwitch: false,
         menuSwitch: false,
-        msgfromfa:['msgfromfa'],
+        // msgfromfa:['msgfromfa'],
         items: [{
           message: '你好',
           class: 'me'
@@ -78,7 +71,7 @@
         this.menuSwitch = true;
       },
       showInfo: function() {
-        console.log(this.msgfromfa);
+        // console.log(this.msgfromfa);
         // var list = this.items;
         // window.addEventListener('scroll', function() {
          
@@ -128,7 +121,7 @@
   .convo {
     margin: auto;
     height: 33rem;
-    width: 18rem;
+    width: 17rem;
     border: 1px solid #dacbb9;
     box-shadow: 0px 1px 12px 3px rgb(255, 251, 251);
     border-radius: 2rem;

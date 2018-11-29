@@ -60,6 +60,147 @@
 <div class="tip">
   注意：这里是必须仔细阅读
   </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+   <p>
+    推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
+  </p>
+  <pre class="hljs">
+  npm i element-ui -S
+¶ CDN
+</pre>
+<p>目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+  我们提供了通用的项目模板，你可以直接使用。对于 Laravel 用户，我们也准备了相应的模板，同样可以直接下载使用。
+如果不希望使用我们提供的模板，请继续阅读
+</p>
+<div class="tip">
+  注意：这里是必须仔细阅读
+  </div>
+  
         </div>
 
 <div class="liuyanban_a">

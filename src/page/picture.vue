@@ -34,7 +34,7 @@
         </div>
       </el-col>
     </el-row>
-    <vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="fetchImgsData" @click="clickFn">
+    <vue-waterfall-easy  :imgsArr="imgsArr" @scrollReachBottom="fetchImgsData" @click="clickFn">
       <div slot="waterfall-head" class="watergall"></div>
       <template slot-scope="props">
                                               <div class="player_info">

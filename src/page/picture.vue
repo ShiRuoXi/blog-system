@@ -29,7 +29,7 @@
           </el-row>
           <!-- <div class="main-part">
          
-         
+         0
         </div> -->
         </div>
       </el-col>

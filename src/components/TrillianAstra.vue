@@ -1,63 +1,64 @@
 <template>
-   <div>
-          <div id="convo" class="convo">
-            <div class="property_page">
-              <div class="Chat_title">与小白聊天中...</div>
-              <ul class="chat-thread" id="chat">
-                <li v-for="item in items" :class="item.message==''?'noetclass':item.class">
-                  <div id="showinfo">{{ item.message}} </div>
-                </li>
-              </ul>
-              <div class="sent_div" @click="chatSwitch =!chatSwitch;" v-show="!chatSwitch">
-                <span>请输入内容...</span>
-              </div>
+  <div>
+    <div id="convo" class="convo">
+      <div class="property_page">
+        <div class="Chat_title">与小白聊天中...</div>
+        <input id="test" v-bind:value='msgfromfa' >
+        <ul class="chat-thread" id="chat">
+          <li v-for="item in items" :class="item.message==''?'noetclass':item.class">
+            <div id="showinfo">{{ item.message}} </div>
+          </li>
+        </ul>
+        <div class="sent_div" @click="chatSwitch =!chatSwitch;" v-show="!chatSwitch">
+          <span>请输入内容... </span>
+        </div>
+      </div>
+      <div class="msg_end" id="msg_end" v-show="chatSwitch">
+        <div class="mag_content">
+          <div class="answer_tliet">说点什么... <i class="el-icon-close" @click="chatSwitch =!chatSwitch;"></i></div>
+          <div class="Answer_me" v-show="!menuSwitch">
+            <ul>
+              <li @click="getmenu()">......</li>
+              <li @click="addstatement()">你是谁？</li>
+              <li>你职业是什么？</li>
+            </ul>
+          </div>
+          <div class="ask_me" v-show="menuSwitch">
+            <div>
+              <a>学习</a>
+              <a>恋爱</a>
+              <a>规划</a>
             </div>
-            <div class="msg_end" id="msg_end" v-show="chatSwitch">
-              <div class="mag_content">
-                <div class="answer_tliet">说点什么... <i class="el-icon-close" @click="chatSwitch =!chatSwitch;"></i></div>
-                <div class="Answer_me" v-show="!menuSwitch">
-                  <ul>
-                    <li @click="getmenu()">......</li>
-                    <li @click="addstatement()">你是谁？</li>
-                    <li>你职业是什么？</li>
-                  </ul>
-                </div>
-                <div class="ask_me" v-show="menuSwitch">
-                  <div>
-                    <a>学习</a>
-                    <a>恋爱</a>
-                    <a>规划</a>
-                  </div>
-                  <div>
-                    <a>恋爱</a>
-                    <a>规划</a>
-                    <a>灵感</a>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <a>恋爱</a>
+              <a>规划</a>
+              <a>灵感</a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
   import $ from 'jquery'
   export default {
     name: 'TrillianAstra',
-    // props:["msgfromfa"],
+      props:["msgfromfa"],
     data: function() {
       return {
         chatSwitch: false,
         menuSwitch: false,
-        // msgfromfa:['msgfromfa'],
         items: [{
           message: '你好',
           class: 'me'
         }]
+        // ,msg:['msgfromfa']
       }
     },
     mounted: function() {
-      this.showInfo();
+      // this.showInfo();
     },
     methods: {
       addstatement: function() {
@@ -71,10 +72,8 @@
         this.menuSwitch = true;
       },
       showInfo: function() {
-        // console.log(this.msgfromfa);
         // var list = this.items;
         // window.addEventListener('scroll', function() {
-         
         //   var distance = document.getElementById("shouji").offsetTop || document.getElementById("shouji").body.offsetTop;
         //   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         //   if (scrollTop > (distance - 150) && state) {

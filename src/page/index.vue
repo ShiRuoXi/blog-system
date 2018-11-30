@@ -30,7 +30,47 @@
             <div v-show="item==2" class="height_a let_padding">
               <p>页面维修中...</p>
             </div>
-            <TrillianAstra v-show="item==3" class="height_a let_padding"></TrillianAstra>
+            <!--手机模型触发 -->
+            <div v-show="item==3" class="height_a let_padding">
+              <div id="convo" class="convo">
+                <div class="property_page">
+                  <div class="Chat_title">与小白聊天中...</div>
+                  <ul class="chat-thread" id="chat">
+                    <li v-for="item in items" :class="item.message==''?'noetclass':item.class">
+                      <div id="showinfo">{{ item.message}} </div>
+                    </li>
+                  </ul>
+                  <div class="sent_div" @click="chatSwitch =!chatSwitch;" v-show="!chatSwitch">
+                    <span>请输入内容... </span>
+                  </div>
+                </div>
+                <div class="msg_end" id="msg_end" v-show="chatSwitch">
+                  <div class="mag_content">
+                    <div class="answer_tliet">说点什么... <i class="el-icon-close" @click="chatSwitch =!chatSwitch;"></i></div>
+                    <div class="Answer_me" v-show="!menuSwitch">
+                      <ul>
+                        <li @click="getmenu()">......</li>
+                        <li @click="addstatement()">你是谁？</li>
+                        <li>你职业是什么？</li>
+                      </ul>
+                    </div>
+                    <div class="ask_me" v-show="menuSwitch">
+                      <div>
+                        <a>学习</a>
+                        <a>恋爱</a>
+                        <a>规划</a>
+                      </div>
+                      <div>
+                        <a>恋爱</a>
+                        <a>规划</a>
+                        <a>灵感</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </swiper-slide>
       </swiper>
@@ -43,19 +83,17 @@
     swiperSlide
   } from 'vue-awesome-swiper'
   import HomePage from '../components/HomePage';
-  import TrillianAstra from '../components/TrillianAstra';
   export default {
     components: {
       HomePage,
-      TrillianAstra,
       swiper,
       swiperSlide
     },
     data() {
       return {
-        // msgfromfa: 0,//传值
         list: [], //轮换列表
         index: "",
+        //首页切换
         swiperOption: {
           notNextTick: true,
           direction: 'vertical',
@@ -71,22 +109,29 @@
           on: {
             //监听滑动切换事件，返回swiper对象
             slideChange: () => {
+              let m = this;
               let swiper = this.$refs.mySwiper.swiper;
-              //  this.msgfromfa=swiper.activeIndex;
-              // if (swiper.activeIndex == 3) {
-              //   //  this.items.push({
-              //   //  message: '你好',
-              //   //    class: 'you'
-              //   //  });
-              //   console.log(swiper.activeIndex);
-              // }
-            }
-            // ,
-            // slideChangeTransitionEnd: function() {
-            //  this.index = this.activeIndex;
-            // }
+              if (swiper.activeIndex == 3) {
+                setTimeout(function() {
+                  m.items.push({
+                    message: '你好',
+                    class: 'me'
+                  });
+                  m.chatSwitch = false;
+                }, 300);
+              } else {
+                m.items=[];
+              }
+            },
           }
-        }
+        },
+        //手机模型
+        chatSwitch: false,
+        menuSwitch: false,
+        items: [{
+          message: '',
+          class: ''
+        }]
       }
     },
     created() {
@@ -97,11 +142,24 @@
         return this.$refs.mySwiper.swiper
       }
     },
+    methods: {
+      addstatement: function() {
+        this.items.push({
+          message: '你是谁',
+          class: 'you'
+        });
+        this.chatSwitch = false;
+      },
+      getmenu: function() {
+        this.menuSwitch = true;
+      }
+    },
     mounted() {}
   }
 </script>
 <style scoped>
   @import url("../../static/css/index.css");
+  @import url("../../static/css/astra");
   .height_a {
     height: 50rem;
   }

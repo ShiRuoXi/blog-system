@@ -46,17 +46,22 @@
   height: 29rem;
   border: 1px solid #dacbb9;
   margin: 2rem .625rem;
+
   /* box-shadow: inset 0px -1px 30px #99dad794; */
+}
+.liaotianstyle
+{
+  
+  height: 20.5rem;
+  background-color: rgba(211, 235, 235, 0.56);
+  padding: 2rem 0.5rem;
+  overflow: auto;
 }
 ul.chat-thread {
   text-align: left;
-  height: 21rem;
-  overflow: auto;
-  padding: 2rem 0.5rem;
-  background-color: rgba(211, 235, 235, 0.56);
-  /* background-color: #fbe1eb85; */
   list-style-type: none;
 }
+
 .chat-thread ::scrollbarbutton {
   display: none !important;
 }
@@ -115,8 +120,12 @@ ul.chat-thread {
   background-color: #fff;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 99.70%;
 }
+/* .Answer_me ul
+{
+  overflow: auto;
+} */
 .Answer_me ul li {
   list-style-type: none;
   color: #666;

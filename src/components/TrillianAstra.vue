@@ -70,22 +70,6 @@
       },
       getmenu: function() {
         this.menuSwitch = true;
-      },
-      showInfo: function() {
-        // var list = this.items;
-        // window.addEventListener('scroll', function() {
-        //   var distance = document.getElementById("shouji").offsetTop || document.getElementById("shouji").body.offsetTop;
-        //   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        //   if (scrollTop > (distance - 150) && state) {
-        //     list.push({
-        //       message: '很高兴认识你!',
-        //       class: 'me'
-        //     });
-        //     state = false;
-        //     window.removeEventListener;
-        //   }
-        // })
-        // this.items = list;
       }
     }
   }

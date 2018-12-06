@@ -177,7 +177,8 @@
     },
     created() {
       this.list = [0, 1, 2, 3];
-    },
+    }
+    ,
     computed: {
       swiper() {
         return this.$refs.mySwiper.swiper
@@ -195,14 +196,15 @@
           _this.menuSwitch = true;
         } else {
           setTimeout(function() {
+           
             _this.items.push({
               message: '是呀,我是小白呀。很高兴见到你',
               class: 'me'
             });
           }, 400);
         }
-       let a= $(".liaotianstyle").scrollHeight;
-       alert(a);
+      //  let a= $(".liaotianstyle").scrollHeight;
+      //  alert(a);
       },
       getmenu: function() {
         this.menuSwitch = true;

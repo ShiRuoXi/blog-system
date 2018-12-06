@@ -9,6 +9,8 @@ import desultory from '@/page/desultory'
 import special from '@/page/special'
 import test from '@/page/test'
 
+//特效页面
+import button from '@/special/button'
 import vueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(vueAwesomeSwiper);
 Vue.use(Router)
@@ -60,6 +62,11 @@ export default new Router({
       path:'/test',
       name:'test',
       component:test
+    },
+    {
+      path:'/but',
+      name:'button',
+      component:button
     }
   ]
 })

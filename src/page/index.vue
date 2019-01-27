@@ -4,9 +4,9 @@
       <div class="calendar">福袋</div>
       <div class="count_down">
         <div class="Holiday_tips Holiday_style">
-          2018年09月24
-          <br> 八月十五
-          <br> 中秋节
+          2018年09月24 2018
+          <br> 八月十五 
+          <br> 中秋节    
         </div>
         <div class="Holiday_tips Holiday_info">距离中秋回家还有<span style="color:#d24343;font-size: 1rem;padding:4px;">55</span>天.
         </div>
